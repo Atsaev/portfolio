@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Python Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Навигация -->
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-code"></i>
+                    <span>Portfolio</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">О себе</a></li>
+                    <li><a href="#skills" class="nav-link">Навыки</a></li>
+                    <li><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li><a href="#achievements" class="nav-link">Достижения</a></li>
+                    <li><a href="#experience" class="nav-link">Опыт</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header-content">
+                <div class="photo-section">
+                    <div class="photo-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Фото профиля" class="profile-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h1 class="name">Ацаев Хасан</h1>
+                    <p class="title">Начинающий Python Backend Developer</p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Москва, Россия
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:alex.petrov@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            atsaev.khasan@yandex.ru
+                        </a>
+                        <a href="https://github.com/alexpetrov" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            github.com/atsaev
+                        </a>
+                        <a href="https://linkedin.com/in/alexpetrov" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            linkedin.com/in/atsaev
+                        </a>
+                    </div>
+                    <div class="experience-counter">
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="1">0</span>
+                            <span class="counter-label">Год опыта</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="15">0</span>
+                            <span class="counter-label">Проектов</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="500">0</span>
+                            <span class="counter-label">Часов кодинга</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основное содержание -->
+        <main class="main">
+            <!-- О себе -->
+            <section class="section about" id="about">
+                <h2 class="section-title">
+                    <i class="fas fa-user"></i>
+                    О себе
+                </h2>
+                <p class="about-text">
+                    Начинающий backend-разработчик с сильной мотивацией к обучению и росту.
+                    Имею опыт создания REST API на Python с использованием FastAPI и Django.
+                    Постоянно развиваюсь в области веб-разработки, изучаю новые технологии и лучшие практики.
+                    Готов к удаленной работе и открыт для новых вызовов.
+                </p>
+                <div class="theme-toggle">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="print-btn" class="print-btn" aria-label="Распечатать резюме">
+                        <i class="fas fa-print"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Навыки -->
+            <section class="section skills" id="skills">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Технические навыки
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Языки программирования</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Фреймворки</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">FastAPI</span>
+                            <span class="skill-item">Django</span>
+                            <span class="skill-item">Flask</span>
+                            <span class="skill-item">Django REST Framework</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Базы данных</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">SQLite</span>
+                            <span class="skill-item">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Инструменты и технологии</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Linux</span>
+                            <span class="skill-item">Nginx</span>
+                            <span class="skill-item">Celery</span>
+                            <span class="skill-item">pytest</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="section projects" id="projects">
+                <h2 class="section-title">
+                    <i class="fas fa-project-diagram"></i>
+                    Проекты
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop" alt="E-commerce API">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/alexpetrov/ecommerce-api" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://ecommerce-api-demo.herokuapp.com/docs" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce API</h3>
+                            <p>REST API для интернет-магазина с авторизацией, корзиной и системой заказов</p>
+                            <div class="tech-stack">
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop" alt="Task Management">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/alexpetrov/task-manager" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://task-manager-demo.herokuapp.com" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management System</h3>
+                            <p>Система управления задачами с real-time обновлениями и уведомлениями</p>
+                            <div class="tech-stack">
+                                <span>Django</span>
+                                <span>WebSocket</span>
+                                <span>Celery</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=200&fit=crop" alt="Weather API">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/alexpetrov/weather-api" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://weather-api-demo.herokuapp.com" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Aggregator API</h3>
+                            <p>API для агрегации данных о погоде из различных источников</p>
+                            <div class="tech-stack">
+                                <span>Flask</span>
+                                <span>Redis</span>
+                                <span>pytest</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Достижения -->
+            <section class="section achievements" id="achievements">
+                <h2 class="section-title">
+                    <i class="fas fa-trophy"></i>
+                    Достижения
+                </h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Хакатон "Digital Breakthrough"</h3>
+                            <p>1 место в номинации "Лучший backend"</p>
+                            <span class="achievement-date">Октябрь 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>1000+ коммитов</h3>
+                            <p>На GitHub за последний год</p>
+                            <div class="achievement-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Опенсорс вклад</h3>
+                            <p>5 пулл-реквестов в популярные репозитории</p>
+                            <span class="achievement-date">2023-2024</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Top 10% на Stepik</h3>
+                            <p>По курсу "Python: от новичка до профессионала"</p>
+                            <span class="achievement-date">Июнь 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Быстрый старт</h3>
+                            <p>Получил оффер за 2 недели после стажировки</p>
+                            <span class="achievement-date">Август 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Tech-блог</h3>
+                            <p>50+ статей о Python и backend разработке</p>
+                            <span class="achievement-date">Постоянно</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- Образование -->
+            <section class="section education" id="education">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Образование
+                </h2>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Бакалавр по информационным технологиям</h3>
+                        <span class="education-date">2020 - 2024</span>
+                    </div>
+                    <p class="education-place">Московский государственный технический университет им. Н.Э. Баумана</p>
+                    <p class="education-description">Специализация: Программная инженерия</p>
+                </div>
+                <div class="certificates">
+                    <h4>Сертификаты</h4>
+                    <div class="certificate-items">
+                        <span class="certificate-item">Python Developer - Stepik</span>
+                        <span class="certificate-item">REST API with Flask and Python - Udemy</span>
+                        <span class="certificate-item">PostgreSQL for Developers - Coursera</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Опыт работы -->
+            <section class="section experience" id="experience">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    Опыт работы
+                </h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Python Backend Developer (Стажировка)</h3>
+                        <span class="experience-date">Июнь 2023 - Август 2023</span>
+                    </div>
+                    <p class="experience-place">TechCorp Solutions</p>
+                    <ul class="experience-description">
+                        <li>Разработка REST API для внутренней CRM-системы на FastAPI</li>
+                        <li>Интеграция с внешними сервисами через API</li>
+                        <li>Оптимизация запросов к PostgreSQL</li>
+                        <li>Написание unit-тестов с использованием pytest</li>
+                        <li>Работа в команде из 5 разработчиков по методологии Agile</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Контакты -->
+            <section class="section contact-section" id="contact">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i>
+                    Контакты
+                </h2>
+                <div class="contact-info-detailed">
+                    <h3>Свяжитесь со мной</h3>
+                    <p>Готов к новым интересным проектам и вызовам!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>atsaev.khasan@yandex.ru</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-telegram"></i>
+                            <span>@atsaev</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/atsaev</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Подвал -->
+        <footer class="footer">
+            <p>&copy; 2025 Ацаев Хасан. Все права защищены.</p>
+            <p>Создано с ❤️ для лучшего будущего</p>
+            <div class="terminal-easter-egg">
+                <div class="terminal-header">
+                    <span class="terminal-title">debug@portfolio:~$</span>
+                    <div class="terminal-controls">
+                        <span class="control-btn close"></span>
+                        <span class="control-btn minimize"></span>
+                        <span class="control-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command" id="type-command">./hire_me --skills</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="terminal-output" id="terminal-output">
+                        <!-- Output will appear here -->
+                    </div>
+                    <div class="terminal-hint">
+                        <small>💡 Нажмите Enter или кликните на терминал</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
